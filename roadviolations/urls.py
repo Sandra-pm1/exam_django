@@ -23,4 +23,7 @@ urlpatterns = [
     path('create/',views.ViolationCreateView.as_view(),name="create"),
     path('signup/',views.SignUpView.as_view(),name="register"),
     path('signin/',views.SignInView.as_view(),name="login"),
+    path('list/',views.ViolationsListView.as_view(),name="list"),
+    path('update/<int:pk>/',views.ViolationsUpdateView.as_view(),name="update"),
+
 ]
